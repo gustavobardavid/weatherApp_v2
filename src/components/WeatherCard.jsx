@@ -4,16 +4,13 @@ const WeatherCard = ({ weather }) => {
   return (
     <div className="card">
       <div className="weather-icon">
-        <img
-          src={weather.icon_url}
-          alt={weather.location.name}
-        />
+    
       </div>
       <div className="weather-info">
         <h2>{weather.location.name}</h2>
-        <p>Temperature: {weather.current.temp_c}°C</p>
-        <p>Condition: {weather.current.condition.text}</p>
-        <p>Condition: <img src={weather.current.condition.icon} alt="" /></p>
+        <p>{weather.current.temp_c}°C</p>
+        <p>{weather.current.condition.text}</p>
+        <p><img src={weather.current.condition.icon} alt="" /></p>
       </div>
     </div>
   );
