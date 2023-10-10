@@ -6,7 +6,7 @@ import WeatherCard from './components/WeatherCard';
 function App() {
   const [weatherList, setWeatherList] = useState([]);
   const [isLoading, setIsLoading] = useState(false); // Inicialmente, não está carregando
-  const [city, setCity] = useState('Cajazeiras'); // Cidade padrão
+  const [city] = useState('Cajazeiras'); // Cidade padrão
   const [searchCity, setSearchCity] = useState(''); // Estado para a pesquisa
 
   const key = '6d6f1b20f1cc46eeb1d181345231010';

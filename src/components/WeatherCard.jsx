@@ -1,11 +1,9 @@
 import PropTypes from 'prop-types';
-
+import '/src/styles/Cartao.css';
 const WeatherCard = ({ weather }) => {
   return (
-    <div className="card">
-      <div className="weather-icon">
+    <div className="cartao">
     
-      </div>
       <div className="weather-info">
         <h2>{weather.location.name}</h2>
         <p>{weather.current.temp_c}°C</p>
